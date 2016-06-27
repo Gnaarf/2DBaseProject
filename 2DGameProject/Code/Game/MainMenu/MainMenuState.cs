@@ -9,12 +9,12 @@ namespace GameProject2D
 
         public MainMenuState()
         {
-            background = new Sprite(new Texture("Textures/MainMenu_Background.jpg"));
+            background = new Sprite(AssetManager.GetTexture(AssetManager.TextureName.MainMenuBackground));
         }
 
         public GameState Update(float deltaTime)
         {
-            if (Keyboard.IsKeyPressed(Keyboard.Key.Return))
+            if (KeyboardInputManager.IsPressed(Keyboard.Key.Return))
             {
                 return GameState.InGame;
             }
