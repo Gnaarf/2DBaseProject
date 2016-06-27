@@ -91,12 +91,6 @@ public struct Vector2
         } 
     }
 
-    public Vector2 normalize() 
-    {
-        float l = length;
-        return this /= l; 
-    }
-
     /// <summary>returs a vector rotated around the given angle</summary>
     public Vector2 rotate(float angle)
     {
